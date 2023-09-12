@@ -21,11 +21,33 @@ html {
   font-family: sans-serif;
 }
 body {
-  font-family: 'Ubuntu', sans-serif;
-  /* font-family: 'Overpass', sans-serif; */
+  overflow-x: hidden;
 }
 
 /*General classes*/
+.heading-secondary {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
+  color: var(--Very-dark-blue);
+}
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
+  color: var(--Very-dark-blue);
+}
+.heading-tertiary--white {
+  color: var(--White);
+}
+.paragraph {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  line-height: 2;
+  color: var(--Grayish-blue);
+}
 .btn {
   text-decoration: none;
   display: inline-block;
@@ -44,13 +66,22 @@ body {
 }
 /*Utility classes*/
 .mg-top-sm {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 .mg-top-md {
   margin-top: 4rem !important;
 }
 .mg-top-lg {
   margin-top: 12rem !important;
+}
+.mg-bottom-sm {
+  margin-bottom: 2rem !important;
+}
+.mg-bottom-md {
+  margin-bottom: 4rem !important;
+}
+.mg-bottom-lg {
+  margin-bottom: 12rem !important;
 }
 /*Header*/
 .header {
@@ -121,5 +152,30 @@ body {
 
 /*Main*/
 .main {
-  padding: 10rem 4rem;
+  padding: 14rem 4rem;
+  /* padding: 14rem 0rem 14rem 16rem; */
+}
+.grid {
+  padding-left: 10rem;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60vw;
+  align-items: center;
+  /* margin-top: -8rem; */
+  /* background-color: rebeccapurple; */
+  /* overflow: hidden; */
+}
+
+.grid__img-box {
+  width: 100%;
+  height: 100%;
+}
+.grid__img {
+  height: 100%;
+  width: 100%;
+}
+.grid__img img {
+  height: 100%;
+  /* width: 100%; */
 }
