@@ -54,7 +54,6 @@ body {
 }
 /*Header*/
 .header {
-  /* background-color: var(--Light-red); */
   padding: 6rem 4rem 15rem;
   position: relative;
   top: 0;
@@ -96,14 +95,16 @@ body {
   color: var(--White);
   text-align: center;
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Overpass', sans-serif;
 }
 .header__subheading {
   color: var(--White);
   text-align: center;
-  font-size: 2.2rem;
+  font-weight: 400;
+  font-size: 2rem;
   font-family: 'Overpass', sans-serif;
+  letter-spacing: 1.4px;
 }
 .header__cta {
   margin: 0 auto;
@@ -120,5 +121,5 @@ body {
 
 /*Main*/
 .main {
-  padding: 12rem 4rem;
+  padding: 10rem 4rem;
 }
