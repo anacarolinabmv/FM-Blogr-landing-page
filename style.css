@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-red: hsl(356, 100%, 66%); /*(CTA text)*/
+  --Very-light-red: hsl(355, 100%, 74%); /*(CTA hover background)*/
+  --Very-dark-blue: hsl(208, 49%, 24%); /*(headings)*/
+
+  --White: hsl(0, 0%, 100%);
+  --Grayish-blue: hsl(240, 2%, 79%); /*(footer text)*/
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%); /*(body copy)*/
+  --Very-dark-black-blue: hsl(240, 10%, 16%); /* (footer background*/
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Overpass', sans-serif; */
+}
+
+/*General classes*/
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  color: var(--White);
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.btn--white {
+  color: var(--Light-red);
+  background-color: var(--White);
+}
+.btn--white-border {
+  border: 1px solid var(--White);
+}
+/*Utility classes*/
+.mg-top-sm {
+  margin-top: 2rem;
+}
+.mg-top-md {
+  margin-top: 4rem !important;
+}
+.mg-top-lg {
+  margin-top: 12rem !important;
+}
+/*Header*/
+.header {
+  /* background-color: var(--Light-red); */
+  padding: 6rem 4rem 15rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+    url(/images/bg-pattern-intro-desktop.svg);
+  background-blend-mode: saturation;
+  border-bottom-left-radius: 10rem;
+  background-position: left 25% top 52%;
+}
+.navbar {
+  font-weight: 500;
+}
+.navbar__logo-box {
+  position: absolute;
+  display: inline-block;
+  margin-left: 12rem;
+}
+.navbar__links {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 28rem;
+}
+
+.navbar__list-item {
+  display: inline-block;
+  list-style: none;
+  padding: 1rem;
+}
+.navbar__list-item-link {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.header__heading {
+  color: var(--White);
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: 'Overpass', sans-serif;
+}
+.header__subheading {
+  color: var(--White);
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Overpass', sans-serif;
+}
+.header__cta {
+  margin: 0 auto;
+  text-align: center;
+  font-size: inherit;
+}
+
+.header__cta > .btn:first-child {
+  margin-right: 1rem;
+}
+.header__cta > .btn {
+  padding: 1.5rem 2rem;
+}
+
+/*Main*/
+.main {
+  padding: 12rem 4rem;
+}
